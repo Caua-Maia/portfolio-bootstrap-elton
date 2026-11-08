@@ -1,0 +1,62 @@
+/* Ajustes mínimos: Bootstrap cobre o restante */
+
+:root {
+  --elton-header-offset: 4.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--elton-header-offset);
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* Foco visível extra em links e botões */
+:focus-visible {
+  outline: 3px solid #6ea8fe;
+  outline-offset: 3px;
+}
+
+.skip-link:focus {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 1080;
+}
+
+/* Carrossel: altura fluida e contraste da legenda */
+.carousel-featured .carousel-item img {
+  height: min(70vh, 32rem);
+  object-fit: cover;
+}
+
+.carousel-featured .carousel-item-navespace {
+  background-color: #0b1220;
+}
+
+.carousel-featured .carousel-item-navespace img {
+  object-fit: contain;
+}
+
+.carousel-featured .carousel-caption {
+  background-color: rgba(13, 17, 23, 0.72);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+}
+
+/* Cards com altura uniforme */
+.area-card {
+  height: 100%;
+}
+
+.area-card img {
+  height: 10rem;
+  object-fit: cover;
+}
+
+/* Espaçamento do rodapé */
+.site-footer a:hover {
+  text-decoration: underline !important;
+}
